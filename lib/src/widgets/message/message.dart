@@ -236,7 +236,7 @@ class Message extends StatelessWidget {
             ? null
             : TextDirection.ltr,
         children: [
-          if (!currentUserIsAuthor && showUserAvatars) _avatarBuilder(),
+          if (showUserAvatars) _avatarBuilder(),
           ConstrainedBox(
             constraints: BoxConstraints(
               maxWidth: messageWidth.toDouble(),
